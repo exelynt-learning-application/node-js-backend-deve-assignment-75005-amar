@@ -1,0 +1,110 @@
+Module: Installing Node.js & Working with npm
+
+Assignment Title:
+Node.js Installation
+
+Description
+
+Install Node.js on your computer and verify that the installation is working correctly. Create a new Node.js project using npm and generate the package.json file. Students should demonstrate the basic commands required to set up a Node.js development environment.
+
+Task Requirements
+
+1. Install Node.js
+
+Download and install Node.js according to your operating system.
+
+After installation, open Terminal, Command Prompt, or PowerShell.
+
+2. Verify Node.js Installation
+
+Check the installed Node.js version:
+
+node -v
+
+The command should display the installed Node.js version.
+
+3. Verify npm Installation
+
+Check the npm version:
+
+npm -v
+
+The command should display the installed npm version.
+
+4. Create a Node.js Project
+
+Create a new project folder:
+
+mkdir nodejs-project
+
+Move into the project folder:
+
+cd nodejs-project
+
+5. Initialize npm
+
+Initialize the Node.js project using:
+
+npm init
+
+Follow the prompts and provide the required project information.
+
+Students may also use:
+
+npm init -y
+
+This automatically creates package.json with default project settings.
+
+6. Verify package.json
+
+After npm initialization, confirm that the project contains:
+
+package.json
+
+The package.json file should contain project information such as:
+
+- Project name
+- Version
+- Description
+- Main entry file
+- Scripts
+- Author
+- License
+
+7. Create a Basic Node.js File
+
+Create a file named:
+
+app.js
+
+Add a simple Node.js statement:
+
+console.log("Node.js project is working successfully.");
+
+Run the program using:
+
+node app.js
+
+The terminal should display:
+
+Node.js project is working successfully.
+
+8. Check the Project Structure
+
+The project should contain at least:
+
+nodejs-project/
+│
+├── app.js
+└── package.json
+
+9. Submission Requirements
+
+Students should submit:
+
+- Screenshot showing node -v output.
+- Screenshot showing npm -v output.
+- Screenshot of the project folder.
+- Screenshot of the package.json file.
+- Screenshot showing successful execution of app.js.
+- Brief explanation of the installation and npm initialization steps.
