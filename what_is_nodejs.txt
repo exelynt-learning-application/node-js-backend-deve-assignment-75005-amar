@@ -1,0 +1,182 @@
+Module: Introduction to Backend Development & Node.js
+
+Assignment Title:
+What is Node.js?
+
+Description
+
+Write a detailed report explaining Node.js, its architecture, advantages, disadvantages, and real-world applications. The report should be written in simple and clear language and should demonstrate an understanding of how Node.js is used for backend development.
+
+1. Introduction to Node.js
+
+Node.js is a JavaScript runtime environment that allows developers to execute JavaScript outside of a web browser.
+
+It is built on Chrome's V8 JavaScript engine and is commonly used to develop backend applications, APIs, web servers, real-time applications, and command-line tools.
+
+Node.js allows developers to use JavaScript for both frontend and backend development.
+
+2. How Node.js Works
+
+Node.js uses an event-driven and non-blocking I/O architecture.
+
+When a client sends a request, Node.js receives the request and processes it. Instead of waiting for slow operations such as database queries or file operations to finish, Node.js can continue handling other requests.
+
+Once the required operation is completed, the result is returned to the appropriate request.
+
+Basic flow:
+
+Client
+   ↓
+HTTP Request
+   ↓
+Node.js Server
+   ↓
+Application Logic
+   ↓
+Database / External Service
+   ↓
+Response
+   ↓
+Client
+
+3. Node.js Architecture
+
+Node.js follows an event-driven architecture.
+
+Important concepts include:
+
+Event-Driven Architecture:
+Node.js responds to events such as HTTP requests, file operations, and database responses.
+
+Non-Blocking I/O:
+Node.js does not need to wait for an I/O operation to finish before handling other tasks.
+
+Event Loop:
+The event loop manages asynchronous operations and allows Node.js to handle multiple requests efficiently.
+
+V8 JavaScript Engine:
+Node.js uses Google's V8 engine to execute JavaScript code.
+
+4. Advantages of Node.js
+
+Fast Performance
+
+Node.js uses the V8 JavaScript engine, which provides fast JavaScript execution.
+
+Non-Blocking Architecture
+
+Node.js can handle multiple I/O operations without blocking the execution of other requests.
+
+Scalable
+
+Node.js is suitable for applications that need to handle many simultaneous connections.
+
+JavaScript for Frontend and Backend
+
+Developers can use JavaScript across the full application stack.
+
+Large Package Ecosystem
+
+Node.js provides access to a large ecosystem of packages through npm.
+
+Suitable for Real-Time Applications
+
+Node.js is commonly used for applications that require real-time communication, such as chat applications and live notifications.
+
+5. Disadvantages of Node.js
+
+Not Ideal for CPU-Intensive Tasks
+
+Node.js is generally better suited for I/O-intensive applications. Heavy CPU-bound operations can block the event loop if not handled properly.
+
+Callback and Asynchronous Complexity
+
+Poorly structured asynchronous code can become difficult to understand and maintain.
+
+Rapidly Changing Ecosystem
+
+The large number of packages and frequent updates can sometimes make dependency management challenging.
+
+Dependency Management
+
+Projects may depend on many third-party packages, which require proper version and security management.
+
+6. Real-World Applications of Node.js
+
+Node.js is used for many types of applications, including:
+
+- REST APIs
+- Web applications
+- Real-time chat applications
+- Streaming applications
+- Online collaboration tools
+- Microservices
+- Command-line applications
+- Backend services
+
+7. Companies Using Node.js
+
+Several well-known companies have used Node.js in their technology stacks.
+
+Examples include:
+
+Netflix:
+Node.js has been used in parts of Netflix's web application architecture to support fast and scalable web experiences.
+
+LinkedIn:
+LinkedIn has used Node.js for backend services and mobile application infrastructure.
+
+PayPal:
+PayPal has used Node.js for parts of its web application stack.
+
+Uber:
+Uber has used Node.js for backend services and systems that require scalable, event-driven processing.
+
+These examples demonstrate how Node.js can be used in large-scale applications.
+
+8. Node.js vs Browser JavaScript
+
+JavaScript in a browser primarily interacts with web pages and browser APIs.
+
+Node.js allows JavaScript to run on a server or local computer and provides additional capabilities such as:
+
+- File system access
+- Network communication
+- Server creation
+- Process management
+- Database connectivity through libraries
+
+Therefore, Node.js extends the use of JavaScript beyond browser-based applications.
+
+9. Common Uses of Node.js
+
+Node.js can be used to build:
+
+- REST APIs
+- Authentication services
+- E-commerce backends
+- Social media backends
+- Chat applications
+- Payment services
+- File-processing applications
+- Real-time dashboards
+
+10. Simple Node.js Example
+
+Example:
+
+const http = require("http");
+
+const server = http.createServer((req, res) => {
+    res.end("Hello from Node.js");
+});
+
+server.listen(3000, () => {
+    console.log("Server running on port 3000");
+});
+
+This example creates a basic HTTP server using Node.js.
+
+When a client sends a request to the server, Node.js responds with:
+
+Hello from Node.js
