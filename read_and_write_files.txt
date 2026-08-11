@@ -1,0 +1,105 @@
+Module: Node.js Modules & File System
+
+Assignment Title:
+Read and Write Files
+
+Description
+
+Develop a Node.js application that uses the built-in File System (fs) module to read data from one file and write the same or processed data into another file.
+
+The objective is to understand how Node.js works with files and how built-in modules can be used to perform file operations.
+
+Task Requirements
+
+1. Create the Input File
+
+Create a file named:
+
+input.txt
+
+Add sample text or information to the file.
+
+Example:
+
+Student Name: Rahul
+Course: Node.js
+Marks: 85
+
+2. Import the File System Module
+
+Use Node.js's built-in fs module in your application.
+
+Example:
+
+const fs = require("fs");
+
+3. Read Data from the File
+
+Read the contents of input.txt using the File System module.
+
+The program should display the data read from the file in the terminal.
+
+4. Create the Output File
+
+Create a file named:
+
+output.txt
+
+Write the data read from input.txt into output.txt.
+
+5. Display a Success Message
+
+After successfully writing the file, display a message such as:
+
+Data successfully copied from input.txt to output.txt
+
+6. Handle File Errors
+
+The application should handle common file-related errors.
+
+For example, if input.txt does not exist, the program should display a meaningful error message instead of crashing unexpectedly.
+
+Example:
+
+Error: Unable to read the input file.
+
+7. Verify the Output
+
+After running the application, check output.txt and confirm that the expected data has been written correctly.
+
+Expected Project Structure
+
+read-write-files/
+│
+├── input.txt
+├── output.txt
+├── app.js
+└── package.json
+
+8. Expected Program Flow
+
+input.txt
+    ↓
+Node.js Application
+    ↓
+fs Module
+    ↓
+Read File
+    ↓
+Process / Copy Data
+    ↓
+Write File
+    ↓
+output.txt
+
+9. Submission Requirements
+
+Students should submit:
+
+- Node.js source code.
+- input.txt containing sample data.
+- Generated output.txt file.
+- Screenshot showing successful program execution.
+- Screenshot showing the contents of the output file.
+- Brief explanation of how the fs module was used.
+- Explanation of how file errors were handled.
